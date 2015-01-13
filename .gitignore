@@ -1,6 +1,8 @@
 *.class
 
 # Package Files #
+*.jar
+!gwt-servlet.jar
 *.war
 
 # gwt caches and compiled units #
