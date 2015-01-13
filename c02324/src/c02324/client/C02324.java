@@ -41,6 +41,8 @@ public class C02324 implements EntryPoint {
 	 * This is the entry point method.
 	 */
 	public void onModuleLoad() {
+		
+		
 		HelloWorld hw = new HelloWorld();
 		Document.get().getBody().appendChild(hw.getElement());
 		hw.setName("Daniel 2.0");
