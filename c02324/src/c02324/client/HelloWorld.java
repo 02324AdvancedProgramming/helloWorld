@@ -8,17 +8,11 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 
 public class HelloWorld {
+	interface HelloWorldUiBinder extends UiBinder<DivElement, HelloWorld> {}
+	private static HelloWorldUiBinder uiBinder = GWT.create(HelloWorldUiBinder.class);
 
-	private static HelloWorldUiBinder uiBinder = GWT
-			.create(HelloWorldUiBinder.class);
-
-	interface HelloWorldUiBinder extends UiBinder<DivElement, HelloWorld> {
-	}
-
-	@UiField
-	SpanElement nameSpan;
-	
 	private DivElement root;
+	@UiField SpanElement nameSpan;	
 
 	public HelloWorld() {
 //		initWidget(uiBinder.createAndBindUi(this));

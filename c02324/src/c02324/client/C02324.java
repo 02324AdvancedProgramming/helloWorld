@@ -43,9 +43,14 @@ public class C02324 implements EntryPoint {
 	public void onModuleLoad() {
 		
 		
-		HelloWorld hw = new HelloWorld();
-		Document.get().getBody().appendChild(hw.getElement());
-		hw.setName("Daniel 2.0");
+//		HelloWorld hw = new HelloWorld();
+//		Document.get().getBody().appendChild(hw.getElement());
+//		hw.setName("Daniel 2.0");
+		
+		
+		HelloWidgetWorld helloWorld = new HelloWidgetWorld("able", "baker", "charlie", "Doris", "Edward", "Finley", "George");
+		RootPanel.get().add(helloWorld);
+		
 		
 //		final Button sendButton = new Button("Send");
 //		final TextBox nameField = new TextBox();
